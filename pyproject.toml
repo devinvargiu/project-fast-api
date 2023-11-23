@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "project-fast-api"
+version = "0.1.0"
+description = "base poetry project for module fast-api"
+authors = ["Devin Vargiu <devin.vargiu@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "project_fast_api"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.104.1"
+uvicorn = {extras = ["standard"], version = "^0.24.0.post1"}
+pendulum = "^2.1.2"
+
+[tool.poetry.scripts]
+start = ""
+test = ""
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
