@@ -14,8 +14,7 @@ uvicorn = {extras = ["standard"], version = "^0.24.0.post1"}
 pendulum = "^2.1.2"
 
 [tool.poetry.scripts]
-start = ""
-test = ""
+start = "project_fast_api.main:start"
 
 [build-system]
 requires = ["poetry-core"]
